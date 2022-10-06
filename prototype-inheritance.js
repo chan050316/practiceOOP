@@ -13,9 +13,9 @@ console.log(subObj.subVal); // sub
 console.log(subObj.superVal); // super
 // 부모자식 관계가 만들어져 subObj에서도 superVal를 가져올 수 있게 되었다.
 
-// subObj.superVal = "sub";
-// console.log(subObj.superVal); // sub
-// console.log(superObj.superVal); // super
+subObj.superVal = "sub";
+console.log(subObj.superVal); // sub
+console.log(superObj.superVal); // super
 // 그리고 상속된 값을 이후에 바꾼다해도 부모의 값은 바뀌지 않는다.
 // 그리고 이 __proto__는 언제든 수정해 링크를 바꿀 수도 있다 (유연하지만 좋은 것만은 아니다)
 // 또 __proto__는 생긴게 이상한것 처럼 javascript에선 표준으로 인정하고 있지 않다. == 이것은 정석은 아니다.
